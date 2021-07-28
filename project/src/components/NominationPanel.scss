@@ -1,0 +1,59 @@
+@import '../styles/variables.scss';
+
+.nominee-panel {
+  width: 45vw;
+  min-height: 50vh;
+  margin: 0.8rem 0px;
+  background-color: transparent;
+  border-radius: 0;
+
+  ol {
+    // display: flex;
+    margin: 0;
+    list-style-type: decimal;
+    list-style-position: inside;
+
+    li {
+      font-family: $primary-font;
+      animation: fadeIn 1s ease;
+      list-style: decimal;
+      color: $primary-background-color;
+      display: flex;
+      margin: 1rem 10px;
+      font-size: 1em;
+      font-weight: 600;
+      text-align: left;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .counter-text {
+    margin-left: 10px;
+    font-size: 1.25rem;
+    color: $primary-background-color;
+  }
+
+  .count-box {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .status-text {
+    margin: 3rem;
+    font-size: 1.3rem;
+    text-align: center;
+    color: $primary-background-color;
+    line-height: 40px;
+  }
+
+  p {
+    font-family: $primary-font;
+    font-weight: 500;
+    margin: 0;
+    padding: 0.5rem;
+  }
+}

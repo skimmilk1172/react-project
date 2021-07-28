@@ -1,0 +1,407 @@
+@import './variables.scss';
+
+//---- xtra Small Devices ----
+
+@media only screen and (min-width: 0px) and (max-width: 620px) {
+  .show-page {
+    h1 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.3rem;
+    }
+  }
+
+  .search-panel {
+    h3 {
+      font-size: 1rem;
+    }
+  }
+  .flex-row1 {
+    flex-direction: column;
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    .status-text {
+      font-size: 14px;
+      margin: 10px 5px;
+    }
+
+    .nominee-panel ol li {
+      font-size: 14px;
+    }
+    .nominee-panel .status-text {
+      font-size: 14px;
+    }
+    .results-panel ul li {
+      font-size: 14px;
+    }
+
+    button {
+      min-width: 5rem;
+      height: 2.1rem;
+      font-size: 12px;
+    }
+  }
+  #root > div > div.search-panel > div > div.flex-row2 {
+    margin: auto;
+  }
+
+  #root > div > div.search-panel > div > div.flex-row2 > div > input {
+    min-width: 200px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  #root > div > div.search-panel > div > div.flex-row2 > div {
+    width: 16rem;
+  }
+
+  #root > div > div.header > div > {
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+  #root > div > div.search-panel > div > div.submit-btn > button {
+    min-width: 210px;
+  }
+  #root > div > div.search-panel > div > div.flex-row2 > div > div > svg {
+    display: none;
+  }
+}
+
+//---- Small/Tablets ----
+
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+  .page-container {
+    height: fit-content;
+  }
+
+  .show-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-bar {
+    width: 100%;
+    height: 2em;
+    border-radius: 4px;
+    font-size: 1.3em;
+    text-align: center;
+    font-family: $primary-font;
+  }
+
+  .search-panel {
+    margin-top: 5rem;
+  }
+
+  .desktop-heading {
+    display: none;
+  }
+
+  .header {
+    z-index: 20;
+    background-color: black;
+    padding-top: 10px;
+    margin-bottom: 0;
+    justify-content: center;
+    h1 {
+      font-size: 2.3rem;
+    }
+    .site-logo-container {
+      margin: 0;
+    }
+    .submit-btn {
+      button {
+        margin-top: 8px;
+        height: 3rem;
+        min-width: 15rem;
+        max-width: 6.5rem;
+        font-size: 16px;
+      }
+    }
+  }
+  #root > div > div.search-panel > div > div.flex-row2 > div > input {
+    width: 25rem;
+  }
+
+  #root > div > div.flex-row1 {
+    margin-top: 9.5rem;
+  }
+
+  .flex-row1 {
+    position: relative;
+    margin-top: 1rem;
+    flex-direction: column;
+    width: 85vw;
+    min-height: 50vh;
+    height: fit-content;
+    align-items: center;
+    .results-panel {
+      border-left: none;
+      border-bottom: 3px solid $color-primary;
+      border-right: none;
+      width: 80vw;
+      min-height: 50vh;
+
+      ul {
+        margin: auto;
+        padding: 1em;
+        justify-content: center;
+        align-items: space-between;
+      }
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2px;
+        font-size: 1.2rem;
+        text-align: left;
+        margin: 10px;
+      }
+    }
+
+    .nominee-panel {
+      border-left: none;
+      align-items: center;
+      width: 80vw;
+      min-height: 50vh;
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+    ol {
+      margin: auto;
+      padding: 1em;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        display: flex;
+        padding: 2px;
+        font-size: 1.2rem;
+        text-align: left;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+      }
+    }
+  }
+  button {
+    margin-left: 15px;
+    height: 2.4rem;
+    min-width: 6.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+// Medium/Small Laptops
+
+@media only screen and (min-width: 993px) {
+  .site-logo-container {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
+  .header {
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  .search-panel {
+    padding-top: 2rem;
+    .submit-btn {
+      button {
+        width: 14rem;
+        height: 2.6rem;
+        font-size: 1.1rem;
+        margin-top: 1rem;
+      }
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.1rem;
+    }
+  }
+  .flex-row1 {
+    width: 85vw;
+    height: 60vh;
+
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    font-size: 1rem;
+
+    .nominee-panel {
+      p {
+        padding: 0;
+        font-size: 1rem;
+      }
+    }
+
+    button {
+      height: 2rem;
+      min-width: 6rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  #root > div > div.flex-row1 {
+    margin-top: 10rem;
+  }
+}
+
+//Large Monitors
+
+@media only screen and (min-width: 1401px) {
+  .header {
+    margin-bottom: 1rem;
+    h1 {
+      font-size: 2.9rem;
+    }
+    h2 {
+      font-size: 2.4rem;
+    }
+  }
+  .search-panel {
+    margin-top: 1rem;
+    padding-top: 0;
+    .submit-btn {
+      button {
+        width: 14rem;
+        height: 3.2rem;
+        font-size: 1.1rem;
+        margin: 0.4rem;
+      }
+    }
+
+    h2 {
+      font-size: 2.7rem;
+    }
+    h3 {
+      font-size: 1.3rem;
+    }
+  }
+  .flex-row1 {
+    width: 80vw;
+
+    min-height: fit-content;
+
+    h3 {
+      font-size: 1.6rem;
+    }
+
+    font-size: 1.2rem;
+
+    button {
+      margin-right: 1rem;
+      height: 2.4rem;
+      min-width: 7rem;
+      font-size: 1rem;
+    }
+    .nominee-panel {
+      p {
+        padding: 0;
+        font-size: 1.3rem;
+      }
+      .status-text {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  #root > div > div.flex-row1 {
+    margin-top: 13rem;
+  }
+
+  #root > div > div.search-panel > div.flex-row2 > div > input {
+    height: 2.8rem;
+    width: 25rem;
+    font-size: 1.3rem;
+  }
+}
+
+//Extra Large Monitors
+
+@media only screen and (min-width: 1900px) {
+  .header {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2.8rem;
+    }
+  }
+  .search-panel {
+    .submit-btn {
+      button {
+        width: 15rem;
+        height: 3rem;
+        font-size: 1.3rem;
+        margin: 0.5rem;
+        margin-bottom: 0.8rem;
+      }
+      .search-bar {
+        input {
+          height: 4rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    h2 {
+      font-size: 3.2rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+  #root > div > div.flex-row1 {
+    margin-top: 13rem;
+  }
+
+  #root > div > div.search-panel > div > div.flex-row2 > div > input {
+    height: 3rem;
+    min-width: 20rem;
+    font-size: 1.7rem;
+  }
+  .flex-row1 {
+    width: 70vw;
+    min-height: 60vh;
+
+    h3 {
+      font-size: 2.1rem;
+    }
+
+    font-size: 1.3rem;
+
+    button {
+      margin-right: 1rem;
+      height: 2.5rem;
+      min-width: 8rem;
+      font-size: 1.3rem;
+      transform: size(1.5);
+    }
+  }
+  .nominee-panel {
+    p {
+      font-size: 1.8rem;
+    }
+  }
+  .status-text {
+    font-size: 2rem;
+  }
+  #root > div > div.flex-row1 {
+    margin-top: 16rem;
+  }
+}

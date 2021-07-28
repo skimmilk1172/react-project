@@ -1,0 +1,37 @@
+@import '../styles/variables.scss';
+
+.results-panel {
+  width: 45vw;
+  margin: 0.8rem 0px;
+  background-color: transparent;
+
+  ul {
+    color: $primary-background-color;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    li {
+      font-family: $primary-font;
+      display: flex;
+      margin: 1rem 10px;
+      font-size: 1em;
+      font-weight: 600;
+      text-align: left;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .highlighted-text {
+    color: $primary-background-color;
+  }
+
+  .status-text {
+    margin: 3rem;
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align: center;
+    color: $primary-background-color;
+  }
+}

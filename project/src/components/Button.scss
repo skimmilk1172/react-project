@@ -1,0 +1,35 @@
+@import '../styles/variables.scss';
+
+button {
+  font-family: $primary-font;
+  transition: color 0.5s ease;
+  transition: border 0.5s ease;
+  transition: background-color 0.5s ease;
+  margin: 5px 5px 5px 10px;
+  height: 1.8rem;
+  min-width: 5rem;
+  color: lighten($color-primary, 20%);
+  background-color: $primary-background-color;
+  font-size: 0.8rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 9999px;
+  text-align: center;
+  outline: none;
+  box-shadow: rgba(135, 135, 135, 0.25) 0px 70px 60px,
+    rgba(161, 161, 161, 0.12) 0px -12px 20px,
+    rgba(185, 184, 184, 0.12) 0px 4px 6px,
+    rgba(156, 154, 154, 0.17) 0px 12px 13px,
+    rgba(178, 178, 178, 0.09) 0px -3px 5px;
+
+  &:hover:enabled {
+    transform: scale(1.06, 1.06);
+    opacity: 0.85;
+    cursor: pointer;
+    // outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.55;
+  }
+}

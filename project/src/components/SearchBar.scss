@@ -1,0 +1,39 @@
+@import '../styles/variables.scss';
+
+.search-bar {
+  width: 80%;
+  height: 2em;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 1.3em;
+  text-align: center;
+  font-family: $primary-font;
+}
+
+.flex-row {
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.flex-row2 {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  margin-right: 1rem;
+  color: $color-primary;
+  font-size: 1.8em;
+}
+
+input {
+  background-color: $secondary-background-color;
+  box-shadow: rgba(46, 44, 44, 0.25) 0px 54px 55px,
+    rgba(60, 58, 58, 0.12) 0px -12px 30px, rgba(118, 117, 117, 0.12) 0px 4px 6px,
+    rgba(60, 58, 58, 0.17) 0px 12px 13px, rgba(43, 43, 42, 0.3) 0px -3px 5px;
+  &:focus {
+    outline: #b0965a 1px auto;
+  }
+}
